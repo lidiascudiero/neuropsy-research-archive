@@ -1,6 +1,6 @@
 # MSc Thesis (2023): Clinical Traits and Cognitive Processing 
 
-**Research Objective:** To understand how individual characteristics (Attachment Style, Trait Anxieity etc.) influence information processing, perception, and interpretation of interpersonal relationship scenarios.
+**Research Objective:** To understand how individual characteristics (Attachment Style, Trait Anxiety etc.) influence information processing, perception, and interpretation of interpersonal relationship scenarios.
 
 ---
 

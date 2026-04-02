@@ -1,4 +1,4 @@
-# Neuro-Research Archive: Experimental Design & Behavioral Analytics 
+# Neuropsy-Research Archive: Experimental Design & Behavioral Analytics 
 
 This repository is a professional archive of experimental protocols and behavioral scripting developed between 2022 and 2023. It showcases the implementation of high-precision cognitive tasks and psychometric assessments using **PsyToolkit**.
 

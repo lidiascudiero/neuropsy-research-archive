@@ -1,6 +1,6 @@
 # MSc Thesis (2023): Clinical Traits and Cognitive Processing 
 
-**Research Objective:** To understand how individual characteristics (Attachment Style, Trait Anxiety etc.) influence information processing, perception, and interpretation of interpersonal relationship scenarios.
+**Research Objective:** Investigation into the interaction between clinical traits (Attachment, Anxiety) and cognitive processing (Attention, Memory, Interpretation).
 
 ---
 
@@ -47,6 +47,28 @@ The scripts in this folder demonstrate advanced **PsyToolkit** capabilities:
 * `recognition_memory_task.psy`: Manages the stimuli randomization and memory encoding/retrieval.
 
 ---
+
+
+##  Technical Implementation
+* **Modular Scripting:** Separate files for psychometric batteries and cognitive tasks to optimize data flow.
+* **Ethics & GDPR:** Mandatory digital consent blocks and custom anonymization algorithms for full data protection.
+
+---
+
+##  Experimental Results
+
+The study was implemented via PsyToolkit and analyzed using IBM SPSS v21.0. 
+
+### Assessment & Psychometrics
+* **ECR-12 & STAI-Y2:** Integrated assessment of adult attachment styles and trait anxiety.
+* **Looming Cognitive Style (LCSQ):** Anxious individuals perceived physical threats as significantly more imminent and "speeding up" compared to secure and avoidant groups.
+* **Ambiguous Scenarios Test (AST):** Disorganized attachment styles showed a significant bias toward "Anger" interpretations in social scenarios.
+### Cognitive Paradigms & Findings
+* **Posner Cueing Task:** * Anxious participants showed a trend toward faster overall reaction times.
+    * General findings across all groups indicated an initial avoidance of positive stimuli (100ms) followed by difficulty disengaging from both positive and negative cues (500ms).
+* **Old-New Recognition Task:** * Negative social stimuli were recognized with higher accuracy compared to neutral and positive ones.
+    * Positive images were more likely to cause "false alarms," showing a higher response bias (mistaken for already seen).
+
 
 ##  References
 * **Posner, M. I. (1980).** Orienting of attention.

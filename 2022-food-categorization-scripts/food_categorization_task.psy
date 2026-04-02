@@ -1,0 +1,76 @@
+options
+fullscreen
+loading text Cliccaqui
+startbutton text Clicca qui
+resolution 1200 900
+mouse on
+
+fonts
+arial 32
+
+bitmaps 
+riso
+insalata
+pollo
+hotdog
+spinaci
+popcorn
+vellutata
+nuggets
+yogurt
+cereali
+lasagna
+panzerotti
+cannoli
+macedonia
+patate
+salmone
+pane
+tiramisu
+gelato
+pizza
+SCAFFALE
+fatto
+istruzioni
+
+
+table presentazione_alimenti
+riso
+insalata
+pollo
+hotdog
+spinaci
+popcorn
+vellutata
+nuggets
+yogurt
+cereali
+lasagna
+panzerotti
+cannoli
+macedonia
+patate
+salmone
+pane
+tiramisu
+gelato
+pizza
+
+
+task trascinamento_alimenti
+table presentazione_alimenti
+show bitmap SCAFFALE 0 0
+show bitmap @1 -400 0 
+show bitmap fatto -400 200
+drag option from 2 
+drag option xlim -200 200 
+drag option ylim -150 200
+drag option exit 3
+dragging 300000 
+save TASKNAME BLOCKNAME @1 TABLEROW RT DRAG_OLD_X DRAG_OLD_Y DRAG_X DRAG_Y
+
+block Myblock1
+message istruzioni space
+tasklist
+ trascinamento_alimenti 20 all_before_repeat
+end

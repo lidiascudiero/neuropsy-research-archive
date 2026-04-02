@@ -1,0 +1,184 @@
+options
+ fullscreen
+ loading text Clicca qui
+ startbutton text Clicca qui
+ resolution 1000 800
+ background color black
+
+
+bitmaps
+ donnapiangesucorpo
+ mancryingoveragrave
+ cyclesofdomesticviolence
+ funeralefamiglia
+ comeaffrontarecontuofiglio
+ litebimbogenitori
+ effettidivorziobimba
+ giochidisquadrabambini
+ bambinigiocano
+ coppiafelice
+ amicheabbraccio
+ coppiacucinaballo
+ coppiadianziani
+ nonni
+ fermatabus
+ fermatametro
+ camionista
+ donnaseduta
+ bimbacompiti
+ donnastrada
+ uomofermata
+ donnapiangebara
+ violenzadomestica
+ abbandonopadre
+ mankneeling
+ litigare
+ bimbaesclusa
+ bambinagenitorilitigio
+ coppiatienemano
+ coppiabacio
+ papabimbo
+ anzianiabbraccio
+ accoglienzanipotino
+ nonnabimbo
+ abbracciomammafiglia
+ scuolabus
+ uominiufficio
+ attesabus
+ uomocomputer
+ donnacomputer
+ uomodonnaufficio
+ bimbapc
+ fixpoint6
+ istrmem1
+ istrmem2
+ nuovo1
+ vecchio1
+
+
+
+
+
+fonts
+  arial 18
+
+table visione
+ donnapiangesucorpo "donnapiangesucorpo"
+ mancryingoveragrave "mancryingoveragrave"
+ cyclesofdomesticviolence "cyclesofdomesticviolence"
+ funeralefamiglia "funeralefamiglia"
+ comeaffrontarecontuofiglio "comeaffrontarecontuofiglio" 
+ litebimbogenitori "litebimbogenitori"
+ effettidivorziobimba "effettidivorziobimba"
+ giochidisquadrabambini "giochidisquadrabambini"
+ bambinigiocano  "bambinigiocano"
+ coppiafelice "coppiafelice"
+ amicheabbraccio "amicheabbraccio"
+ coppiacucinaballo "coppiacucinaballo"
+ coppiadianziani "coppiadianziani"
+ nonni "nonni"
+ fermatabus "fermatabus"
+ fermatametro "fermatametro"
+ camionista "camionista"
+ donnaseduta "donnaseduta"
+ bimbacompiti "bimbacompiti"
+ donnastrada "donnastrada"
+ uomofermata "uomofermata"
+ 
+ 
+
+ 
+
+task freeviewing
+ table visione
+ show bitmap fixpoint6
+ delay 500
+ clear -1
+ delay 500
+ show bitmap @1   
+ delay 1000          
+ clear -1         
+ delay 200     
+ save TASKNAME BLOCKNAME @1 @2
+
+
+block freeviewing 
+ message istrmem1 space  
+ tasklist         
+   freeviewing 21 all_before_reapeat
+ end
+
+
+
+
+table vecchionuovo
+ donnapiangesucorpo 1 "vecchio" "negativo" "donnapiangesucorpo"
+ mancryingoveragrave 1 "vecchio" "negativo" "mancryingoveragrave"
+ cyclesofdomesticviolence 1 "vecchio" "negativo"  "cyclesofdomesticviolence"
+ funeralefamiglia 1 "vecchio" "negativo" "funeralefamiglia"
+ comeaffrontarecontuofiglio 1 "vecchio" "negativo" "comeaffrontarecontuofiglio" 
+ litebimbogenitori 1 "vecchio" "negativo" "litebimbogenitori"
+ effettidivorziobimba 1 "vecchio" "negativo" "effettidivorziobimba"
+ giochidisquadrabambini 1 "vecchio" "positivo"  "giochidisquadrabambini"
+ bambinigiocano 1 "vecchio" "positivo" "bambinigiocano"
+ coppiafelice 1 "vecchio" "positivo" "coppiafelice" 
+ amicheabbraccio 1 "vecchio" "positivo" "amicheabbraccio"  
+ coppiacucinaballo 1 "vecchio" "positivo" "coppiacucinaballo"
+ coppiadianziani 1 "vecchio" "positivo"  "coppiadianziani"
+ nonni 1 "vecchio" "positivo" "nonni" 
+ fermatabus 1 "vecchio" "neutro" "fermatabus"
+ fermatametro 1 "vecchio" "neutro"  "fermatametro"
+ camionista 1 "vecchio" "neutro" "camionista" 
+ donnaseduta 1 "vecchio" "neutro" "donnaseduta" 
+ bimbacompiti 1 "vecchio" "neutro"  "bimbacompiti"
+ donnastrada 1 "vecchio" "neutro"  "donnastrada"
+ uomofermata 1 "vecchio" "neutro"  "uomofermata"
+ donnapiangebara 2 "nuovo" "negativo" "donnapiangebara"
+ violenzadomestica 2 "nuovo" "negativo" "violenzadomestica"
+ abbandonopadre 2 "nuovo" "negativo" "abbandonopadre"
+ mankneeling 2 "nuovo" "negativo" "mankneeling"
+ litigare 2 "nuovo" "negativo" "litigare"
+ bimbaesclusa 2 "nuovo" "negativo" "bimbaesclusa"
+ bambinagenitorilitigio 2 "nuovo" "negativo" "bambinagenitorilitigio"
+ coppiatienemano 2 "nuovo" "positivo" "coppiatienemano"
+ coppiabacio 2 "nuovo" "positivo" "coppiabacio" 
+ papabimbo 2 "nuovo" "positivo" "papabimbo"
+ anzianiabbraccio 2 "nuovo" "positivo" "anzianiabbraccio"
+ accoglienzanipotino 2 "nuovo" "positivo" "accoglienzanipotino"
+ nonnabimbo 2 "nuovo" "positivo" "nonnabimbo"
+ abbracciomammafiglia 2 "nuovo" "positivo" "abbracciomammafiglia"
+ scuolabus 2 "nuovo" "neutro" "scuolabus" 
+ uominiufficio 2 "nuovo" "neutro" "uominiufficio"
+ attesabus 2 "nuovo" "neutro" "attesabus"
+ uomocomputer 2 "nuovo" "neutro" "uomocomputer"
+ donnacomputer 2 "nuovo" "neutro" "donnacomputer"
+ uomodonnaufficio 2 "nuovo" "neutro" "uomodonnaufficio"
+ bimbapc 2 "nuovo" "neutro" " bimbapc"
+
+
+
+
+task riconoscimento
+ keys x m 
+ show bitmap fixpoint6
+ delay 500
+ clear -1
+ delay 500
+ table vecchionuovo
+ show bitmap vecchio1 -250 250
+ show bitmap nuovo1  250 250
+ show bitmap @1 
+ readkey @2 4000  
+ delay 1000          
+ clear -1         
+ delay 200     
+ save TASKNAME BLOCKNAME @1 KEY RT STATUS @3 @4 @5
+
+
+
+
+block riconoscimento 
+ message istrmem2 space 
+ tasklist
+  riconoscimento 42 all_before_reapeat  
+ end

@@ -53,12 +53,12 @@ The following images provide a preview of the experimental interface designed fo
 ## Data Insights
 
 ### Interactive "Scaffale" (Shelf) Task
-* **Key Findings:** * Participants clearly differentiated stimuli categories (high main effect for healthiness).
+* **Key Findings:**  Participants clearly differentiated stimuli categories (high main effect for healthiness).
     * Competitive athletes aligned perfectly with the "Healthy is Up" metaphor, positioning healthy foods significantly higher.
     * For athletes, a strong positive correlation was found between positioning healthy foods high and increased BMI.
 
 ### Body Image & Biometrics
-* **BMI Correlations:** * In sedentary subjects, increased BMI correlated significantly with higher body dissatisfaction.
+* **BMI Correlations:**  In sedentary subjects, increased BMI correlated significantly with higher body dissatisfaction.
     * Sedentary subjects displayed an inverse shelf positioning: as healthy foods went up, unhealthy foods went down.
 
 

@@ -1,6 +1,8 @@
 # [2022] Food Categorization & Body Image Study 
 
-**Research Objective:** This project investigates the facilitatory effect of context on food categorization and its correlation with body image dissatisfaction and BMI.
+This project integrates behavioral tasks with biometric and psychometric data.
+
+**Research Objective:** Exploring the "Healthy is Up" metaphor and how body perception influences the spatial categorization of food stimuli.
 
 ---
 
@@ -48,13 +50,27 @@ The following images provide a preview of the experimental interface designed fo
 
 ---
 
+## Data Insights
+
+### Interactive "Scaffale" (Shelf) Task
+* **Key Findings:** * Participants clearly differentiated stimuli categories (high main effect for healthiness).
+    * Competitive athletes aligned perfectly with the "Healthy is Up" metaphor, positioning healthy foods significantly higher.
+    * For athletes, a strong positive correlation was found between positioning healthy foods high and increased BMI.
+
+### Body Image & Biometrics
+* **BMI Correlations:** * In sedentary subjects, increased BMI correlated significantly with higher body dissatisfaction.
+    * Sedentary subjects displayed an inverse shelf positioning: as healthy foods went up, unhealthy foods went down.
+
+
+##  Data Logic
+* **Data Wrangling:** Extensive use of Excel for raw data cleaning and BMI calculation.
+* **Statistical Modeling:** Conducted via SPSS using ANOVA, MANOVA, and Pearson correlations to validate behavioral metaphors.
+* **Assets:** Stimuli matched for shape and size to eliminate visual bias during the shelf task.
+---
+
 ## References
 * **Mutale, C., et al. (2016).** Body Dissatisfaction Scale Assessment.
 * **Bar, M. (2004).** Visual objects in context.
 * **Stoet, G. (2010, 2017).** PsyToolkit software package.
 ---
 
-##  References
-* **Mutale, C., et al. (2016).** Body Dissatisfaction Scale Assessment.
-* **Bar, M. (2004).** Visual objects in context.
-* **Stoet, G. (2010, 2017).** PsyToolkit software package.

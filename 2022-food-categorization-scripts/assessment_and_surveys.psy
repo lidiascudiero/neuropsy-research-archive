@@ -1,0 +1,510 @@
+l: Consenso_informato
+t: check
+o: require 5
+q: <b>Legga attentamente quanto segue:</b><br> Il progetto di ricerca è stato sviluppato dall'Università degli studi della Campania Luigi Vanvitelli.Per partecipare allo studio è necessario aderire alle seguenti informazioni:
+- Ho letto le informazioni sullo studio
+- Sono consapevole che i miei dati saranno custoditi dall'Università degli Studi della Campania Luigi Vanvitelli
+- che verranno custoditi anonimamente
+- che verranno utilizzati per possibili pubblicazioni
+- Sono consapevole che posso interrompere la mia partecipazione in ogni momento senza dover dare una spiegazione   
+
+
+
+l: anni
+o: require
+t: textline
+q: Indichi la sua età
+-
+
+j: if $anni < 18 or $anni > 40 then end 
+
+
+l: genere
+t: radio
+q: Lei è 
+- Maschio
+- Femmina
+
+
+
+
+l: altezza
+o: require
+t: textline
+q: Indichi la sua altezza in metri (m)
+-
+
+
+
+l: peso
+o: require
+t: textline
+q: Indichi il suo peso in chilogrammi (kg)
+-
+
+
+l: dieta
+t: radio
+q: Indichi il suo stile alimentare
+- Dieta onnivora
+- Dieta vegetariana
+- Dieta vegana
+- {other} inserisca il suo tipo di dieta
+
+
+
+
+l: patologie
+t: radio
+q: È affetto da patologie alimentari? 
+- sì
+- no
+
+l: collegamento_patologie
+t: jump
+- if $patologie == 2 then goto sport
+
+
+
+l: patologie_due
+o: require
+t: textline
+q: Indichi la patologia
+-
+
+
+
+
+l: sport
+t: radio
+q: Con quale frequenza pratica attività fisica?
+- Amatoriale (1/2 volte alla settimana)
+- Agonistica (più di 4 volte a settimana)
+- Non pratico attività fisica
+
+
+
+l: scaffale
+t: experiment
+- {fullscreen} Scaffale
+
+
+l: some_message
+t: info
+q: <b>Legga attentamente quanto segue:</b><br> In questa sezione dello studio le verranno mostrate una serie di immagini di cibi prema con il mouse sulle frecce per indicare quanto gradisce gli alimenti mostrati su una scala che va da 1 "per niente" a 5 "moltissimo".
+
+
+
+
+
+
+
+
+
+random: begin
+
+l: Preferenza1
+o: require
+t: textline
+i: {center} riso.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza2
+o: require
+t: textline
+i: {center} insalata.png 
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza3
+o: require
+t: textline
+i: {center} pollo.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+
+
+l: Preferenza4
+o: require
+t: textline
+i: {center} hotdog.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza5
+o: require
+t: textline
+i: {center} spinaci.png 
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+l: Preferenza6
+o: require
+t: textline
+i: {center} popcorn.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza7
+o: require
+t: textline
+i: {center} vellutata.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza8
+o: require
+t: textline
+i: {center} nuggets.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza9
+o: require
+t: textline
+i: {center} yogurt.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza10
+o: require
+t: textline
+i: {center} cereali.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+
+l: Preferenza11
+o: require
+t: textline
+i: {center} lasagna.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+l: Preferenza12
+o: require
+t: textline
+i: {center} panzerotti.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza13
+o: require
+t: textline
+i: {center} cannoli.png
+q: Quanto gradisce il  cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza14
+o: require
+t: textline
+i: {center} macedonia.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+
+l: Preferenza15
+o: require
+t: textline
+i: {center} patate.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza16
+o: require
+t: textline
+i: {center} salmone.png
+q: Quanto gradisce il  cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza17
+t: textline
+i: {center} pane.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+l: Preferenza18
+o: require
+t: textline
+i: {center} tiramisu.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza19
+o: require
+t: textline
+i: {center} gelato.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Preferenza20
+o: require
+t: textline
+i: {center} pizza.png
+q: Quanto gradisce il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+random: end
+
+
+l: some_message_1
+t: info
+q: <b>Legga attentamente quanto segue:</b><br> In questa sezione dello studio le verranno mostrate una serie di immagini di cibi, prema con il mouse sulle frecce per indicare quanto considera salutari gli alimenti mostrati su una scala che va da 1 "per niente salutare" a  5 "molto salutare"
+
+
+
+
+
+
+  
+
+random: begin
+
+
+
+l: Salute1
+o: require
+t: textline
+i: {center} riso.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute2
+o: require
+t: textline
+i: {center} insalata.png 
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute3
+o: require
+t: textline
+i: {center} pollo.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+
+
+l: Salute4
+o: require
+t: textline
+i: {center} hotdog.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute5
+o: require
+t: textline
+i: {center} spinaci.png 
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+l: Salute6
+o: require
+t: textline
+i: {center} popcorn.png 
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute7
+o: require
+t: textline
+i: {center} vellutata.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute8
+o: require
+t: textline
+i: {center} nuggets.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute9
+o: require
+t: textline
+i: {center} yogurt.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute10
+o: require
+t: textline
+i: {center} cereali.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+
+l: Salute11
+o: require
+t: textline
+i: {center} lasagna.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+l: Salute12
+o: require
+t: textline
+i: {center} panzerotti.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute13
+o: require
+t: textline
+i: {center} cannoli.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute14
+o: require
+t: textline
+i: {center} macedonia.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+
+l: Salute15
+o: require
+t: textline
+i: {center} patate.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute16
+o: require
+t: textline
+i: {center} salmone.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute17
+o: require
+t: textline
+i: {center} pane.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+l: Salute18
+o: require
+t: textline
+i: {center} tiramisu.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+l: Salute19
+o: require
+t: textline
+i: {center} gelato.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+
+l: Salute20
+o: require
+t: textline
+i: {center} pizza.png
+q: Quanto reputa salutare il cibo mostrato nella foto?
+- {min=1,max=5,} Inserisca un valore numerico:
+
+
+random: end
+
+
+l: collegamento_genere_uno
+t: jump
+- if $genere == 2 then goto Immagine_corporea_ideale_F
+
+l: Immagine_corporea_ideale_M
+t: radio
+i: {center} maschi.png
+q: Selezioni tra le alternative proposte quale sagoma corrisponde al modo in cui vorrebbe essere
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+
+l: salta_la_parte_femminile_ideale
+t: jump
+- goto Immagine_corporea_reale_M 
+
+l: Immagine_corporea_ideale_F
+t: radio
+i: {center} femmine.png
+q: Selezioni tra le alternative proposte quale sagoma corrisponde al modo in cui vorrebbe essere
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+
+
+
+l: collegamento_genere_due
+t: jump 
+- if $genere == 2 then goto Immagine_corporea_reale_F
+
+
+
+l: Immagine_corporea_reale_M
+t: radio
+i: {center} maschi.png
+q: Selezioni tra le alternative proposte quali delle  come corrisponde al modo in cui è
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+
+l: salta_la_parte_femminile_reale
+t: jump
+- goto fine
+
+l: Immagine_corporea_reale_F
+t: radio
+i: {center} femmine.png
+q: Selezioni tra le alternative proposte quale delle sagome corrisponde al modo in cui è
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+
+
+
+l: fine
+t: info
+q: il questionario è finito grazie per la partecipazione

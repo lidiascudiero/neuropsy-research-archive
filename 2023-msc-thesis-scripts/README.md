@@ -68,7 +68,12 @@ The study was implemented via PsyToolkit and analyzed using IBM SPSS v21.0.
     * General findings across all groups indicated an initial avoidance of positive stimuli (100ms) followed by difficulty disengaging from both positive and negative cues (500ms).
 * **Old-New Recognition Task:** * Negative social stimuli were recognized with higher accuracy compared to neutral and positive ones.
     * Positive images were more likely to cause "false alarms," showing a higher response bias (mistaken for already seen).
+### Data Logic
+* **Data Wrangling**: Used Excel for cleaning raw reaction time (RT) data and aggregating psychometric sub-scores from ECR-12, STAI-Y2, LCSQ, and AST.
+* **Statistical Modeling**: Conducted via **IBM SPSS v21.0** using **ANOVA**, **MANOVA**, and **Pearson correlations** to identify significant interactions between clinical traits and cognitive performance.
+* **Assets**: Stimuli selected and validated through a pilot study focusing on valence and arousal to ensure high experimental control.
 
+---
 
 ##  References
 * **Posner, M. I. (1980).** Orienting of attention.

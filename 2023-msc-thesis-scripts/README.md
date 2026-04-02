@@ -33,6 +33,13 @@ The study was divided into multiple sections, implemented via **PsyToolkit** scr
 
 ---
 
+###  Experimental Interface Preview
+Below is a visual representation of the cognitive tasks implemented in Phase 1 (Ambiguous Scenarios Test) and 2 (Posner and Memory Recognition):
+
+![Experimental Tasks](images/task.png)
+
+*The image shows the visual stimuli and response interface designed via PsyToolkit scripting.*
+
 ## Technical Scripts (.psy)
 The scripts in this folder demonstrate advanced **PsyToolkit** capabilities:
 * `assessment_battery.psy`: Handles points 1 to 5, including custom anonymization logic.

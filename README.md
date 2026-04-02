@@ -9,7 +9,7 @@ This repository is a professional archive of experimental protocols and behavior
 ###  [2023] Visual Attention & Cognitive Bias Protocol
 Investigation into the interaction between clinical traits and cognitive processing.
 * **Core Paradigms:** **Posner Cueing Task** and **Recognition Memory Task** with millisecond-precision tracking of **Reaction Times (RT)**.
-* **Psychometrics:** Integrated scoring for **ECR-12** (Attachment), **STAI-Y2** (Anxiety), **AST** (Ambiguous Scenarios Test), and **LCSQ** (Looming Cognitive Style Questionnaire).
+* **Psychometrics:** Integrated scoring for **ECR-12** (Attachment Style), **STAI-Y2** (Anxiety), **AST** (Ambiguous Scenarios Test), and **LCSQ** (Looming Cognitive Style Questionnaire).
 * **Logic:** Advanced flow control with conditional branching and custom anonymization algorithms.
 
 ###  [2022] Food Categorization & Body Image Study

@@ -1,0 +1,389 @@
+l: Consenso_informato
+t: check
+o: require 6
+q: <b>Leggi attentamente quanto segue:</b><br> Il progetto di ricerca è stato sviluppato dall'Università degli studi della Campania Luigi Vanvitelli.Per partecipare allo studio è necessario aderire alle seguenti informazioni:
+- Dichiaro di aver letto attentamente la nota informativa relativa al consenso informato.
+- Dichiaro di essere stato/a informato/a riguardo gli obiettivi e alle finalità del progetto di ricerca, così come riguardo   la procedura sperimentale.
+- Dichiaro di aver avuto la possibilità di porre domande a proposito di qualsiasi aspetto della procedura sperimentale e di     aver ottenuto risposte soddisfacenti;
+- Dichiaro di essere a conoscenza dei disagi e benefici dell’esperimento;
+- Dichiaro di aver ricevuto le informazioni relative alla riservatezza dei dati personali che saranno raccolti e trattati, nell’assoluto anonimato, esclusivamente per fini di ricerca.
+- Dichiaro di essere consapevole di potermi ritirare in qualsiasi fase dello studio.
+
+l: compreso
+t: radio
+q: Visto e compreso tutto quanto sopra indicato:
+- FORNISCE IL CONSENSO a partecipare allo studio
+- NON FORNISCE IL CONSENSO a partecipare allo studio
+
+l: jump1
+t: jump
+- if $compreso == 1 then goto consensodue
+
+l: jump2
+t: jump
+- if $compreso == 2 then goto fine
+
+
+l: consensodue
+t: radio
+q: Inoltre, avendo ricevuto apposita informativa sul trattamento dei dati personali e in relazione a quanto indicato in relazione al trattamento dei dati, per ciò che attiene <b>al trattamento e alla comunicazione dei dati personali </b><br> forniti per tutte le finalità indicate nella presente informativa:
+- FORNISCE IL CONSENSO al trattamento dei dati
+- NON FORNISCE IL CONSENSO al trattamento dei dati
+
+
+l: jump3
+t: jump
+- if $consensodue == 1 then goto codice_personale
+
+l: jump4
+t: jump
+- if $consensodue == 2 then goto fine
+
+
+l: codice_personale
+t: textline
+q: Grazie per la partecipazione.
+In caso volessi richiedere i tuoi dati ti chiediamo di compilare queste semplici domande per permettere di creare un codice anonimo per associare le risposte senza poter identificare in alcun modo l'identità.
+<b>Terza lettera del tuo nome</b><br> Nel caso in cui la domanda non fosse applicabile al tuo caso inserisci X altrimenti inserisci lettera\numero richiesti
+<b>Quarta lettera del tuo mese di nascita</b><br> Nel caso in cui la domanda non fosse applicabile al tuo caso inserisci X altrimenti inserisci lettera\numero richiesti
+<b>Ultime tre cifre del tuo numero di cellulare</b><br> Nel caso in cui la domanda non fosse applicabile al tuo caso inserisci 0 altrimenti inserisci lettera\numero richiesti
+Per generare il codice personale scrivi nello spazio sottostante le risposte alle domande precedenti: la terza lettera del suo nome, quarta lettera del suo mese di nascita, ultima tre cifre del suo numero di cellulare ESEMPIO di risposta: NG189.  (io mi chiamo AnNa,il mio mese di nascita è giuGno, le ultime cifre del mio numero di cellulare sono 189 Il mio codice da riportare a questa domanda sarà: NG189)
+-
+
+
+
+
+
+l: anni
+o: require
+t: textline
+q: Indica la tua età (inserisci una risposta numerica)
+-
+
+j: if $anni < 18 then end 
+
+
+
+l: genere
+t: radio
+q: Indica il tuo genere all'anagrafe
+- Maschio
+- Femmina
+
+ 
+
+l: orientamentosessuale
+t: radio
+q: Indica il tuo orientamento sessuale
+- Orientamento eterosessuale
+- Orientamento  bisesssuale
+- Orientamento  asessuale
+- Orientamento  pansessuale e polisessuale
+- Orientamento  demisessuale
+- Preferisco non rispondere
+- {other} Inserire risposta se diversa
+
+
+
+l: situazione_sentimentale
+o: require
+t: radio
+q: Tu sei
+- Con partner 
+- Senza partner 
+
+
+
+
+
+
+l: stato_civile
+t: radio
+q: Indica il tuo stato civile
+- Coniugato/a 
+- Fidanzato/a o attualmente in coppia 
+- Convivente 
+- Separato/a Divorziato/a
+- Single 
+- Vedovo/a
+- {other} Inserire risposta se diversa
+
+
+
+
+
+
+scale: accordodisaccordo
+- fortemente in disaccordo
+- abbastanza in disaccordo
+- un po'in disaccordo
+- nè in accordo nè in disaccordo
+- un po' d'accordo
+- abbastanza d'accordo
+- fortemente d'accordo
+
+
+l: ecr
+t: scale accordodisaccordo
+o: width 50%
+q: Le seguenti affermazioni riguardano ciò che tu provi nelle relazioni
+sentimentali. Siamo interessati a come vivi le relazioni in genere, non solo a ciò che sta
+accadendo in una relazione attualmente in corso. Leggi ogni affermazione e indica,
+per ognuna, il tuo grado di accordo o disaccordo, barrando la casella corrispondente.
+ <br>
+- Ho paura di essere lasciato/a
+- Mi preoccupo molto di perdere il mio partner
+- Ho bisogno di molte rassicurazioni sul fatto di essere amato/a dal mio partner
+- Ho paura di restare solo/a
+- Se non riesco ad ottenere che il partner mi dimostri interesse, ne sono turbato/a o mi arrabbio
+- Temo che il partner non tenga a me quanto io tengo a lui/lei
+- Ho difficoltà ad aprirmi con il partner
+- {reverse} Al mio partner dico quasi tutto
+- {reverse} Mi sento a mio agio nel condividere con il partner i miei più intimi pensieri e sentimenti
+- {reverse} Di solito parlo con il mio partner dei miei problemi e delle mie preoccupazioni
+- {reverse} Mi sento a mio agio ad affidarmi al partner
+- {reverse} Non mi crea problemi chiedere conforto, consiglio o aiuto al partner
+
+
+l: ansiascore
+t: set
+- sum $ecr.1 $ecr.2 $ecr.3 $ecr.4 $ecr.5 $ecr.6
+
+
+
+l: evitamentoscore
+t: set
+- sum $ecr.7 $ecr.8 $ecr.9 $ecr.10 $ecr.11 $ecr.12
+
+
+
+l: stileattaccamento
+t: set
+- if $ansiascore >= 29.5  and  $evitamentoscore >= 15.5 then "disorganizzato"
+- if $ansiascore >= 29.5  and  $evitamentoscore <= 15.5 then "ansioso"
+- if $ansiascore < 29.5  and  $evitamentoscore < 15.5 then "sicuro"
+- if $ansiascore < 29.5  and  $evitamentoscore >= 15.5 then "evitante"
+
+scale: frequenza
+- Per nulla
+- Un po'
+- Abbastanza
+- Moltissimo
+
+
+l: staiy2_tratto
+t: scale frequenza
+q: Sono qui riportate alcune frasi che le persone spesso usano per descriversi. Leggi ciascuna frase e poi clicchi sull'alternativa che indica come abitualmente ti senti, cioè in questo momento. Non ci sono risposte giuste o sbagliate. Non impiegare troppo tempo per rispondere alle domande dai la risposta che sembra descrivere meglio come abitualmente ti senti.
+ <br>
+- {reverse} Mi sento bene
+- Mi sento teso e irrequieto
+- {reverse} Sono soddisfatto di me stesso 
+- Vorrei poter essere felice come sembrano essere gli altri 
+- Mi sento un fallito
+- {reverse} Mi sento riposato
+- {reverse} Io sono calmo, tranquillo e padrone di me
+- Sento che le difficoltà tanto da non poterle superare
+- Mi preoccupo troppo di cose che in realtà non hanno importanza
+- {reverse} Sono felice
+- Mi vengono pensieri negativi
+- Manco di fiducia in me stesso
+- {reverse} Mi sento sicuro 
+- {reverse} Prendo decisioni facilmente
+- Mi sento inadeguato
+- {reverse} Sono contento
+- Pensieri di scarsa importanza mi passano per la mente e mi infastidiscono
+- Vivo le delusioni con tanta partecipazione da non potermele togliere dalla testa
+- {reverse} Sono una persona importante
+- Divento teso quando penso alle mie attuali preoccupazioni
+
+
+
+
+l: ansiatrattoscore
+t: set
+- sum $staiy2_tratto 
+
+l: ansiatratto
+t: set
+- if $ansiatrattoscore >= 40 then "presente"
+- if $ansiatrattoscore < 40 then "assente"
+
+
+
+
+l: some_message_1
+t: info
+q: <b>Leggi attentamente quanto segue:</b><br> Con le seguenti domande siamo interessati ad indagare i tuoi pensieri e le tue reazioni immediate ad una serie di situazioni ipotetiche. Invece di riflettere sulle risposte da dare, ti chiediamo di indicare la reazione immediata che ti viene in mente per ogni situazione. Così, dopo aver letto ogni situazione, prova ad immaginarla con molta accuratezza e realismo, come se davvero la stessi vivendo in questo momento. Prova a concentrarti e a immaginare la situazione con il maggior numero possibile di dettagli. Dopo esserti concentrato sulla scena, rispondi alle domande ponendo un segno sul numero per te appropriato. 
+Per riassumere: 
+1) Immagina di trovarti realmente in ogni situazione descritta 
+2) Rispondi a tutte le domande facendo riferimento ai tuoi pensieri e alle tue emozioni 
+immediate.
+
+
+l: situazione1
+t: range
+q: Immagina di sentire uno strano rumore che proviene dal motore della tua auto mentre stai guidando in tangenziale in un’ora di punta con traffico molto intenso. Ci sono automobili e camion che sfrecciano a destra e sinistra e dal tipo di rumore che senti sembra che il motore della tua auto sia sul punto di rompersi o che stia per subire un guasto serio. 
+Scorri il puntino  blu con il mouse per rispondere.     
+- {no_number,min=1,max=5,left=Le probabilità stanno diminuendo col tempo,right=Le probabilità stanno aumentando col tempo,start=3}In questa scena, le probabilità che tu possa pensare di avere problemi col motore stanno diminuendo o aumentando ogni momento che passa?
+- {no_number,min=1,max=5,left=La minaccia rimane abbastanza stabile e costante,right=La minaccia aumenta rapidamente,start=3}La sensazione soggettiva di minaccia che provi a causa del rumore del motore rimane stabile e costante oppure aumenta ogni momento che passa? 
+- {no_number,min=1,max=5,left=Per nulla,right=Moltissimo,start=3}In che misura visualizzi lo stato del motore peggiorare progressivamente? 
+
+
+l: situazione2
+t: range
+q: Immagina che la persona con la quale hai una relazione sentimentale si stia comportando in maniera 
+ambigua. Arriva tardi agli appuntamenti e ci sono dei lunghi momenti di silenzio in cui non parla ed evita il tuo sguardo.Sembrerebbe che la tua relazione stia per andare in pezzi.  
+Scorri il puntino blu con il mouse per rispondere.     
+- {no_number,min=1,max=5,left=Le probabilità stanno diminuendo col tempo,right=Le probabilità stanno aumentando col tempo,start=3}In questa scena, le probabilità che tu possa sentirti in difficoltà con la tua relazione stanno diminuendo o aumentando ogni momento che passa? 
+- {no_number,min=1,max=5,left=La minaccia rimane abbastanza stabile e costante,right=La minaccia aumenta rapidamente,start=3}La sensazione soggettiva di minaccia legata alla possibile fine della relazione rimane stabile e costante oppure aumenta ogni momento che passa?  
+- {no_number,min=1,max=5,left=Per nulla,right=Moltissimo,start=3}In che misura visualizzi la tua relazione peggiorare progressivamente? 
+
+
+
+
+l: situazione3
+t: range
+q: Immagina di avvertire inaspettatamente delle palpitazioni mentre parli con qualcuno di un problema finanziario.Non hai mai avuto palpitazioni così forti e hai l’impressione che ti possa venire un problema al cuore. 
+Scorri il puntino blu con il mouse per rispondere.     
+- {no_number,min=1,max=5,left=Le probabilità stanno diminuendo col tempo,right=Le probabilità stanno aumentando col tempo,start=3}In questa scena, le probabilità che tu possa pensare di avere problemi cardiaci stanno diminuendo o aumentando ogni momento che passa?  
+- {no_number,min=1,max=5,left=La minaccia rimane abbastanza stabile e costante,right=La minaccia aumenta rapidamente,start=3}La sensazione soggettiva di minaccia legata alla condizione del tuo cuore rimane stabile e costante oppure aumenta ogni momento che passa? 
+- {no_number,min=1,max=5,left=Per nulla,right=Moltissimo,start=3} In che misura visualizzi il possibile problema al tuo cuore peggiorare progressivamente?
+
+
+
+
+
+
+l: situazione4
+t: range
+q: Immagina di andare verso un gruppo di persone e di avvicinarti ad una di queste, che è molto apprezzata ma anche piuttosto egocentrica. La persona ti lancia uno sguardo un po’ infastidito e anche molte altre persone del gruppo stanno guardando verso di te. Vorresti fare un invito a questa persona ma senti che lei potrebbe rifiutarlo sdegnosamente.  
+Scorri il puntino blu con il mouse per rispondere.     
+- {no_number,min=1,max=5,left=Le probabilità stanno diminuendo col tempo,right=Le probabilità stanno aumentando col tempo,start=3}In questa scena, le probabilità che tu possa sentirti in imbarazzo o in difficoltà stanno diminuendo o aumentando ogni momento che passa?  
+- {no_number,min=1,max=5,left=La minaccia rimane abbastanza stabile e costante,right=La minaccia aumenta rapidamente,start=3} La sensazione soggettiva di minaccia legata ad un rifiuto rimane stabile e costante oppure aumenta ogni momento che passa? 
+- {no_number,min=1,max=5,left=Per nulla,right=Moltissimo,start=3} In che misura visualizzi il rischio di ricevere un rifiuto aumentare progressivamente?
+
+
+
+
+
+
+
+l: situazione5
+t: range
+q: Immagina di parlare di fronte ad un’ampia platea di estranei di un argomento che non padroneggi a fondo. Alcune persone sembrano annoiate e disinteressate, mentre altre paiono irritate. Sembrerebbe che i presenti potrebbero reagire molto negativamente al tuo discorso.  
+Scorri il puntino blu con il mouse per rispondere.     
+- {no_number,min=1,max=5,left=Le probabilità stanno diminuendo col tempo,right=Le probabilità stanno aumentando col tempo,start=3}In questa scena, la probabilità che tu possa sentirti in difficoltà con la platea stanno diminuendo o aumentando ogni momento che passa?   
+- {no_number,min=1,max=5,left=La minaccia rimane abbastanza stabile e costante,right=La minaccia aumenta rapidamente,start=3} La sensazione soggettiva di minaccia da parte della platea rimane stabile e costante oppure aumenta ogni momento che passa?  
+- {no_number,min=1,max=5,left=Per nulla,right=Moltissimo,start=3} In che misura visualizzi la reazione della platea peggiorare progressivamente? 
+
+
+
+
+
+l: situazione6
+t: range
+q: Immagina di trovarti alle sei di sera, l’ora di punta del traffico, con l’auto in tangenziale. Un 
+camion rosso dietro di te sta correndo freneticamente in mezzo al traffico continuando a cambiare 
+corsia bruscamente e hai l’impressione che non ti abbia notato. Sembrerebbe esserci un concreto 
+rischio che il camion possa coinvolgerti in un incidente.Scorri il puntino blu con il mouse per rispondere.     
+- {no_number,min=1,max=5,left=Le probabilità stanno diminuendo col tempo,right=Le probabilità stanno aumentando col tempo,start=3}In questa scena, la probabilità che tu possa pensare di essere coinvolto in un incidente stanno diminuendo o aumentando ogni momento che passa?   
+- {no_number,min=1,max=5,left=La minaccia rimane abbastanza stabile e costante,right=La minaccia aumenta rapidamente,start=3} La sensazione soggettiva di minaccia di un possibile incidente rimane stabile e costante oppure aumenta ogni momento che passa?  
+- {no_number,min=1,max=5,left=Per nulla,right=Moltissimo,start=3}  In che misura visualizzi il rischio di un incidente aumentare progressivamente?
+
+
+
+l: minacciafisicascore
+t: set
+- sum $situazione1 $situazione3 $situazione6
+
+
+l: minacciasocialescore
+t: set
+- sum $situazione2 $situazione4 $situazione5
+
+
+l: LCSQTOTALE
+t: set
+- sum $minacciafisicascore $minacciasocialescore
+
+
+
+
+
+
+l: cueing
+t: experiment
+- {fullscreen} cueingcopy
+
+
+
+
+
+l: some_message_2
+t: info
+q: <b>Leggi attentamente quanto segue:</b><br> In questa sezione dello studio ti verranno mostrate delle brevi storie. Inizialmente ti verrà richiesto di valutare la situazione descritta. Successivamente, classificherai trascinando con il mouse quattro opzioni di risposta ordinando le alternative con il mouse su una scala che va da 1 a 4, dove "1" si riferisce a "per nulla probabile e "4" si riferisce a "molto probabile".
+
+
+
+
+
+
+
+
+
+l: vignettapartnerprob
+t: rank
+o: random
+q: Stai aspettando da quasi 45 minuti in stazione e il tuo partner non si presenta. Non puoi contattarlo al cellulare. Ordina le seguenti opzioni dalla più probabile alla meno probabile.
+- Probabilmente ha dovuto aspettare più a lungo e si è accidentalmente dimenticato/a di portare il suo cellulare.
+- Hai paura che possa essere successo qualcosa di brutto.
+- Ti arrabbi. È inaccettabile che ti lasci aspettare così lungo e non si preoccupa nemmeno di portare con sè il cellulare.
+- Forse non verrà e ha deciso di lasciarti.
+
+
+
+
+
+l: vignettaamicarprob
+t: rank
+o: random
+q: Hai passato una bella giornata con una nuova amica. Ha promesso di chiamare, ma tu
+non hai sue notizie da quasi 2 settimane. Quando la chiami, lei non risponde. Ordina le seguenti opzioni dalla più probabile alla meno probabile.
+- Probabilmente è molto impegnata al lavoro. Le scrivi un'e-mail per invitarla a cena.
+- Ti preoccupi e la chiami al lavoro per verificare che stia bene.
+- Sei arrabbiato con lei e le scrivi un messaggio di testo rabbioso.
+- Probabilmente non le è piaciuta la giornata che avete trascorso insieme e lei non vuole più incontrarti. Ti senti abbandonato.
+
+
+
+
+
+
+
+l: vignettacollegaprob
+t: rank
+o: random
+q: Hai ancora un sacco di lavoro da fare e un collega ti suggerisce di aiutarti. Il giorno dopo, noti che il tuo collega ha commesso molti errori. Ordina le seguenti opzioni dalla più probabile alla meno probabile.
+- Ora dovrai dedicarci un po' più di tempo, ma sei comunque felice che abbia già iniziato.
+- Sei deluso/a dal fatto che abbia svolto un lavoro così scadente e discuterai questo problema con lui.
+- Sei arrabbiato/a perché sembra che abbia fatto un pessimo lavoro.
+- Potrebbe essere meglio non dirgli nulla, perché potresti perdere la sua amicizia.
+
+
+
+
+
+l: memoria
+t: experiment
+- {fullscreen} membaps
+
+
+
+
+
+
+
+l: fine
+t: info
+q: il questionario è finito grazie per la partecipazione
+

@@ -46,6 +46,6 @@ PsyToolkit is a free-to-use toolkit created by **Prof. Gijsbert Stoet** (Profess
 
 ##  Ethics & Data Handling
 All protocols were designed following strict ethical guidelines:
-**GDPR Compliance:** Implemented custom anonymization logic to generate unique, non-identifiable participant codes.
-**Informed Consent:** Mandatory digital consent blocks before any data collection.
-**Scoring:** Automated calculation of clinical thresholds (e.g., STAI-Y2 score $\ge 40$ for anxiety presence).
+1. **GDPR Compliance:** Implemented custom anonymization logic to generate unique, non-identifiable participant codes.
+2. **Informed Consent:** Mandatory digital consent blocks before any data collection.
+3. **Scoring:** Automated calculation of clinical thresholds (e.g., STAI-Y2 score $\ge 40$ for anxiety presence).

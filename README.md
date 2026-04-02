@@ -8,16 +8,16 @@ This repository is a professional archive of experimental protocols and behavior
 
 ###  [2023] Visual Attention & Cognitive Bias Protocol
 Investigation into the interaction between clinical traits and cognitive processing.
-**Core Paradigms:** **Posner Cueing Task** and **Recognition Memory Task** with millisecond-precision tracking of **Reaction Times (RT)**.
-**Psychometrics:** Integrated scoring for **ECR-12** (Attachment), **STAI-Y2** (Anxiety), **AST** (Ambiguous Scenarios Test), and **LCSQ** (Looming Cognitive Style Questionnaire).
-**Logic:** Advanced flow control with conditional branching and custom anonymization algorithms.
+1.**Core Paradigms:** **Posner Cueing Task** and **Recognition Memory Task** with millisecond-precision tracking of **Reaction Times (RT)**.
+2.**Psychometrics:** Integrated scoring for **ECR-12** (Attachment), **STAI-Y2** (Anxiety), **AST** (Ambiguous Scenarios Test), and **LCSQ** (Looming Cognitive Style Questionnaire).
+3.**Logic:** Advanced flow control with conditional branching and custom anonymization algorithms.
 
 ###  [2022] Food Categorization & Body Image Study
 Group research project on how environmental consistency and individual body perception bias object classification.
-**Core Paradigm:** Interactive **"Scaffale" (Shelf) task** using standardized food stimuli (Food-475 and Food101 databases).
-**Psychometrics:** Integrated the **Body Dissatisfaction Scale Assessment** (Mutale et al., 2016) to quantify the gap between "Real Self" and "Ideal Self" via silhouette figures.
-**Biometrics & Demographics:** Automated collection of **BMI (Body Mass Index)**, dietary habits (e.g., ketogenic, Mediterranean), and physical activity levels to correlate with cognitive performance.
-**Experimental Logic:** Managed complex stimuli randomization and analysis of **Reaction Times** in context-dependent environments.
+1.**Core Paradigm:** Interactive **"Scaffale" (Shelf) task** using standardized food stimuli (Food-475 and Food101 databases).
+**Psychometrics:** Integrated the **Body Dissatisfaction Scale Assessment** (Mutale et al., 2016) to quantify the gap between "Real Self" and "Ideal Self" via 2.silhouette figures.
+3.**Biometrics & Demographics:** Automated collection of **BMI (Body Mass Index)**, dietary habits (e.g., ketogenic, Mediterranean), and physical activity levels to correlate with cognitive performance.
+4.**Experimental Logic:** Managed complex stimuli randomization and analysis of **Reaction Times** in context-dependent environments.
 
 ---
 

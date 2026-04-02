@@ -28,15 +28,15 @@ The study is structured into two main technical modules implemented via **PsyToo
 The following images provide a preview of the experimental interface designed for this study:
 
 ### The "Scaffale" (Shelf) Task
-![Shelf Task Preview](images/shelf_task_preview.png)
+![Shelf Task Preview](shelf_task_preview.png)
 *Participants categorize food items by dragging them into the appropriate shelf level.*
 
 ### Food Rating Interface
-![Food Rating Preview](images/food_rating_preview.png)
+![Food Rating Preview](food_rating_preview.png)
 *Evaluation interface for subjective food preference and healthiness ratings.*
 
 ### Body Dissatisfaction Silhouette Test
-![Silhouette Test](images/body_dissatisfaction_test.png)
+![Silhouette Test](body_dissatisfaction_test.png)
 *The 9-figure scale used to calculate the gap between perceived and ideal body image.*
 
 ---

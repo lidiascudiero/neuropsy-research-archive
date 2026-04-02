@@ -31,6 +31,8 @@ These projects require the **PsyToolkit** software or the **PsyToolkit platform*
 4. **Compile & Run:** Use the online platform to compile the code. You can run the experiment online or download the HTML file for offline execution.
 5. **Integration:** You can create a survey and include these experiments as part of a larger research battery.
 
+*Note: To respect research privacy and database copyright (e.g., Food-475, Food101), image assets are not included in this repository but are available upon request for research purposes.*
+
 ---
 
 ##  Software Attribution & Mandatory Citations

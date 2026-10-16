@@ -8,17 +8,17 @@ This repository is a professional archive of experimental protocols and behavior
 
 ###  [2023] Visual attention and cognitive bias protocol
 Investigation into the interaction between clinical traits and cognitive processing.
-* **Core Paradigms:** **Posner Cueing Task** and **Recognition Memory Task** with millisecond-precision tracking of **Reaction Times (RT)**.
-* **Psychometrics:** Integrated scoring for **ECR-12** (Attachment Style), **STAI-Y2** (Anxiety), **AST** (Ambiguous Scenarios Test), and **LCSQ** (Looming Cognitive Style Questionnaire).
-* **Logic:** Advanced flow control with conditional branching and custom anonymization algorithms.
+* **Core paradigms:** **Posner Cueing Task** and **Recognition Memory Task** with millisecond-precision tracking of **Reaction Times (RT)**.
+* **Psychometrics:** integrated scoring for **ECR-12** (Attachment Style), **STAI-Y2** (Anxiety), **AST** (Ambiguous Scenarios Test), and **LCSQ** (Looming Cognitive Style Questionnaire).
+* **Logic:** advanced flow control with conditional branching and custom anonymization algorithms.
 
 ###  [2022] Food Categorization and body image study
 Group research project on how environmental consistency and individual body perception bias object classification.
-* **Core Paradigm:** Interactive **"Scaffale" (Shelf) task** using standardized food stimuli (Food-475 and Food101 databases).
-*. **Psychometrics:** Integrated the **Body Dissatisfaction Scale Assessment** (Mutale et al., 2016) to quantify the gap between "Real Self" and "Ideal Self" via silhouette figures.
-* **Biometrics & Demographics:** Automated collection of **BMI (Body Mass Index)**, dietary habits (e.g., ketogenic, Mediterranean), and physical activity levels to correlate with cognitive performance.
-* **Explicit Food Ratings**: Implemented dual 5-point Likert scales to assess Subjective Preference and Perceived Healthiness for all 20 food stimuli.
-* **Experimental Logic:** Managed complex stimuli randomization and analysis of **Reaction Times** and **Vertical Positioning** in context-dependent environments.
+* **Core Paradigm:** interactive **"Scaffale" (Shelf) task** using standardized food stimuli (Food-475 and Food101 databases).
+*. **Psychometrics:** integrated the **Body Dissatisfaction Scale Assessment** (Mutale et al., 2016) to quantify the gap between "Real Self" and "Ideal Self" via silhouette figures.
+* **Biometrics & Demographics:** automated collection of **BMI (Body Mass Index)**, dietary habits (e.g., ketogenic, Mediterranean), and physical activity levels to correlate with cognitive performance.
+* **Explicit Food Ratings**: implemented dual 5-point Likert scales to assess Subjective Preference and Perceived Healthiness for all 20 food stimuli.
+* **Experimental Logic:** managed complex stimuli randomization and analysis of **Reaction Times** and **Vertical Positioning** in context-dependent environments.
 
 ---
 
@@ -26,11 +26,11 @@ Group research project on how environmental consistency and individual body perc
 
 These projects require the **PsyToolkit** software or the **PsyToolkit platform** ([psytoolkit.org](https://www.psytoolkit.org/)).
 
-1. **Create an Account:** Register on [psytoolkit.org](https://www.psytoolkit.org/).
-2. **Upload Files:** Create a new experiment/survey and upload the `.psy` scripts found in this repository.
-3. **Manage Assets:** Upload the necessary bitmaps/images mentioned in the script tables (e.g., stimuli for the shelf or memory tasks).
-4. **Compile & Run:** Use the online platform to compile the code. You can run the experiment online or download the HTML file for offline execution.
-5. **Integration:** You can create a survey and include these experiments as part of a larger research battery.
+1. **Create an Account:** register on [psytoolkit.org](https://www.psytoolkit.org/).
+2. **Upload Files:** create a new experiment/survey and upload the `.psy` scripts found in this repository.
+3. **Manage Assets:** upload the necessary bitmaps/images mentioned in the script tables (e.g., stimuli for the shelf or memory tasks).
+4. **Compile & Run:** use the online platform to compile the code. You can run the experiment online or download the HTML file for offline execution.
+5. **Integration:** you can create a survey and include these experiments as part of a larger research battery.
 
 *Note: To respect research privacy and database copyright (e.g., Food-475, Food101), image assets are not included in this repository but are available upon request for research purposes.*
 

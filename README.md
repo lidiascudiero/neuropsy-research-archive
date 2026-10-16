@@ -1,18 +1,18 @@
-# NeuroPsy-Research Archive: Experimental Design & Behavioral Analytics 
+# NeuroPsy-research archive: Experimental Design and behavioral analytics 
 
 This repository is a professional archive of experimental protocols and behavioral scripting developed between 2022 and 2023. It showcases the implementation of high-precision cognitive tasks and psychometric assessments using **PsyToolkit**.
 
 ---
 
-##  Projects Included
+##  Projects oncluded
 
-###  [2023] Visual Attention & Cognitive Bias Protocol
+###  [2023] Visual attention and cognitive bias protocol
 Investigation into the interaction between clinical traits and cognitive processing.
 * **Core Paradigms:** **Posner Cueing Task** and **Recognition Memory Task** with millisecond-precision tracking of **Reaction Times (RT)**.
 * **Psychometrics:** Integrated scoring for **ECR-12** (Attachment Style), **STAI-Y2** (Anxiety), **AST** (Ambiguous Scenarios Test), and **LCSQ** (Looming Cognitive Style Questionnaire).
 * **Logic:** Advanced flow control with conditional branching and custom anonymization algorithms.
 
-###  [2022] Food Categorization & Body Image Study
+###  [2022] Food Categorization and body image study
 Group research project on how environmental consistency and individual body perception bias object classification.
 * **Core Paradigm:** Interactive **"Scaffale" (Shelf) task** using standardized food stimuli (Food-475 and Food101 databases).
 *. **Psychometrics:** Integrated the **Body Dissatisfaction Scale Assessment** (Mutale et al., 2016) to quantify the gap between "Real Self" and "Ideal Self" via silhouette figures.
@@ -22,7 +22,7 @@ Group research project on how environmental consistency and individual body perc
 
 ---
 
-##  How to Use the Code
+##  How to use the code
 
 These projects require the **PsyToolkit** software or the **PsyToolkit platform** ([psytoolkit.org](https://www.psytoolkit.org/)).
 
@@ -36,7 +36,7 @@ These projects require the **PsyToolkit** software or the **PsyToolkit platform*
 
 ---
 
-##  Software Attribution & Mandatory Citations
+##  Software attribution and mandatory citations
 
 PsyToolkit is a free-to-use toolkit created by **Prof. Gijsbert Stoet** (Professor in Psychology - Essex University, UK). If you use this code for academic studies or student projects, it is essential to cite the following articles:
 
@@ -47,8 +47,8 @@ PsyToolkit is a free-to-use toolkit created by **Prof. Gijsbert Stoet** (Profess
 
 ---
 
-##  Ethics & Data Handling
+##  Ethics and data handling
 All protocols were designed following strict ethical guidelines:
-1. **GDPR Compliance:** Implemented custom anonymization logic to generate unique, non-identifiable participant codes.
-2. **Informed Consent:** Mandatory digital consent blocks before any data collection.
-3. **Scoring:** Automated calculation of clinical thresholds (e.g., STAI-Y2 score $\ge 40$ for anxiety presence).
+1. **GDPR Compliance:** implemented custom anonymization logic to generate unique, non-identifiable participant codes.
+2. **Informed Consent:** mandatory digital consent blocks before any data collection.
+3. **Scoring:** automated calculation of clinical thresholds (e.g., STAI-Y2 score $\ge 40$ for anxiety presence).

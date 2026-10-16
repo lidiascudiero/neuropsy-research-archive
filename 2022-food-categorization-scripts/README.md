@@ -10,7 +10,7 @@ This project integrates behavioral tasks with biometric and psychometric data.
 
 The study is structured into two main technical modules implemented via **PsyToolkit**:
 
-### 1. Assessment & Psychometrics (`assessment_and_surveys.psy`)
+### 1. Assessment and psychometrics (`assessment_and_surveys.psy`)
 * **Biometrics & BMI:** automated collection of height and weight for real-time **Body Mass Index (BMI)** calculation.
 * **Lifestyle Analytics:** scripted assessment of dietary habits (e.g., omnivorous, ketogenic, Mediterranean), food intolerances, and physical activity levels (amateur vs. competitive).
 * **Body Dissatisfaction Scale (BDS):** implementation of the silhouette-based test (Mutale et al., 2016).

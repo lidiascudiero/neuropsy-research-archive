@@ -14,11 +14,11 @@ Investigation into the interaction between clinical traits and cognitive process
 
 ###  [2022] Food Categorization and body image study
 Group research project on how environmental consistency and individual body perception bias object classification.
-* **Core Paradigm:** interactive **"Scaffale" (Shelf) task** using standardized food stimuli (Food-475 and Food101 databases).
+* **Core paradigm:** interactive **"Scaffale" (Shelf) task** using standardized food stimuli (Food-475 and Food101 databases).
 *. **Psychometrics:** integrated the **Body Dissatisfaction Scale Assessment** (Mutale et al., 2016) to quantify the gap between "Real Self" and "Ideal Self" via silhouette figures.
-* **Biometrics & Demographics:** automated collection of **BMI (Body Mass Index)**, dietary habits (e.g., ketogenic, Mediterranean), and physical activity levels to correlate with cognitive performance.
-* **Explicit Food Ratings**: implemented dual 5-point Likert scales to assess Subjective Preference and Perceived Healthiness for all 20 food stimuli.
-* **Experimental Logic:** managed complex stimuli randomization and analysis of **Reaction Times** and **Vertical Positioning** in context-dependent environments.
+* **Biometrics and demographics:** automated collection of **BMI (Body Mass Index)**, dietary habits (e.g., ketogenic, Mediterranean), and physical activity levels to correlate with cognitive performance.
+* **Explicit food ratings**: implemented dual 5-point Likert scales to assess Subjective Preference and Perceived Healthiness for all 20 food stimuli.
+* **Experimental logic:** managed complex stimuli randomization and analysis of **Reaction Times** and **Vertical Positioning** in context-dependent environments.
 
 ---
 

@@ -1,13 +1,13 @@
 # MSc Thesis (2023): Clinical traits and cognitive processing 
 
-**Research Objective:** investigation into the interaction between clinical traits (Attachment, Anxiety) and cognitive processing (Attention, Memory, Interpretation).
+**Research objective:** investigation into the interaction between clinical traits (Attachment, Anxiety) and cognitive processing (Attention, Memory, Interpretation).
 
 ---
 
 ##  Ethics and privacy
-* **Institutional Approval:** approved by the Ethics Committee of the **University of Campania "Luigi Vanvitelli"**.
-* **Informed Consent:** mandatory digital consent block (6 requirements) before participation.
-* **Data Privacy:** guaranteed absolute anonymity through custom-generated codes.
+* **Institutional approval:** approved by the Ethics Committee of the **University of Campania "Luigi Vanvitelli"**.
+* **Informed consent:** mandatory digital consent block (6 requirements) before participation.
+* **Data privacy:** guaranteed absolute anonymity through custom-generated codes.
 
 ---
 
@@ -24,7 +24,7 @@ The study was divided into multiple sections, implemented via **PsyToolkit** scr
    * *Technical Note:* Implemented using `rank` logic to order possible behavioral responses.
 
 ###  Phase 2: Cognitive pradigms
-6. **Posner Cueing Task:** spatial attention task.
+6. **Posner Cueing task:** spatial attention task.
    * *Procedure:* participants respond to a green "X" appearing on the left or right after a visual cue.
    * *Logic:* Fixation (500ms) → Cue (200ms) → Delay (500ms) → Target.
 7. **Recognition Memory task:** encoding and retrieval of emotional stimuli.
@@ -33,7 +33,7 @@ The study was divided into multiple sections, implemented via **PsyToolkit** scr
 
 ---
 
-###  Experimental Interface preview
+###  Experimental interface preview
 Below is a visual representation of the cognitive tasks implemented in Phase 1 (Ambiguous Scenarios Test) and 2 (Posner and Memory Recognition):
 
 ![Experimental Tasks](task.png)
@@ -60,7 +60,7 @@ The scripts in this folder demonstrate advanced **PsyToolkit** capabilities:
 The study was implemented via PsyToolkit and analyzed using IBM SPSS v21.0. 
 
 ### Assessment and psychometrics
-* **ECR-12 & STAI-Y2:** Integrated assessment of adult attachment styles and trait anxiety.
+* **ECR-12 and STAI-Y2:** Integrated assessment of adult attachment styles and trait anxiety.
 * **Looming Cognitive Style (LCSQ):** anxious individuals perceived physical threats as significantly more imminent and "speeding up" compared to secure and avoidant groups.
 * **Ambiguous Scenarios Test (AST):** disorganized attachment styles showed a significant bias toward "Anger" interpretations in social scenarios.
 ### Cognitive Paradigms & Findings
@@ -69,8 +69,8 @@ The study was implemented via PsyToolkit and analyzed using IBM SPSS v21.0.
 * **Old-New Recognition Task:** * negative social stimuli were recognized with higher accuracy compared to neutral and positive ones.
     * Positive images were more likely to cause "false alarms," showing a higher response bias (mistaken for already seen).
 ### Data Logic
-* **Data Wrangling**: used Excel for cleaning raw reaction time (RT) data and aggregating psychometric sub-scores from ECR-12, STAI-Y2, LCSQ, and AST.
-* **Statistical Modeling**: conducted via **IBM SPSS v21.0** using **ANOVA**, **MANOVA**, and **Pearson correlations** to identify significant interactions between clinical traits and cognitive performance.
+* **Data wrangling**: used Excel for cleaning raw reaction time (RT) data and aggregating psychometric sub-scores from ECR-12, STAI-Y2, LCSQ, and AST.
+* **Statistical modeling**: conducted via **IBM SPSS v21.0** using **ANOVA**, **MANOVA**, and **Pearson correlations** to identify significant interactions between clinical traits and cognitive performance.
 * **Assets**: Stimuli selected and validated through a pilot study focusing on valence and arousal to ensure high experimental control.
 
 ---

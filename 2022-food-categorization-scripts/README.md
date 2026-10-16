@@ -1,4 +1,4 @@
-# [2022] Food Categorization and body image study 
+# [2022] Food categorization and body image study 
 
 This project integrates behavioral tasks with biometric and psychometric data.
 
@@ -6,7 +6,7 @@ This project integrates behavioral tasks with biometric and psychometric data.
 
 ---
 
-## Experimental Design and modules
+## Experimental design and modules
 
 The study is structured into two main technical modules implemented via **PsyToolkit**:
 

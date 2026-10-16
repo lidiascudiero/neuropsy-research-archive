@@ -27,9 +27,9 @@ Group research project on how environmental consistency and individual body perc
 These projects require the **PsyToolkit** software or the **PsyToolkit platform** ([psytoolkit.org](https://www.psytoolkit.org/)).
 
 1. **Create an Account:** register on [psytoolkit.org](https://www.psytoolkit.org/).
-2. **Upload Files:** create a new experiment/survey and upload the `.psy` scripts found in this repository.
-3. **Manage Assets:** upload the necessary bitmaps/images mentioned in the script tables (e.g., stimuli for the shelf or memory tasks).
-4. **Compile & Run:** use the online platform to compile the code. You can run the experiment online or download the HTML file for offline execution.
+2. **Upload files:** create a new experiment/survey and upload the `.psy` scripts found in this repository.
+3. **Manage assets:** upload the necessary bitmaps/images mentioned in the script tables (e.g., stimuli for the shelf or memory tasks).
+4. **Compile and run:** use the online platform to compile the code. You can run the experiment online or download the HTML file for offline execution.
 5. **Integration:** you can create a survey and include these experiments as part of a larger research battery.
 
 *Note: To respect research privacy and database copyright (e.g., Food-475, Food101), image assets are not included in this repository but are available upon request for research purposes.*
